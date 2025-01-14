@@ -6,7 +6,9 @@ import som
 import os
 
 pygame.init()
-screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+info = pygame.display.Info()  # Obtém informações do monitor
+screen_width, screen_height = info.current_w, info.current_h
+screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
 screen_width, screen_height = screen.get_size()
 
 def captacao_numeros(n, df, caminho_diretorio, titulo):

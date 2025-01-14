@@ -18,8 +18,9 @@ assert seq in {1, 2}
 
 # Initialize Pygame
 pygame.init()
-# Set the height and width of the screen
-screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+info = pygame.display.Info()  # Obtém informações do monitor
+screen_width, screen_height = info.current_w, info.current_h
+screen = pygame.display.set_mode((screen_width, screen_height), pygame.FULLSCREEN)
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 # Limit to 60 frames per second
@@ -45,7 +46,7 @@ caminho_diretorio = "excel_digit_span"
 titulo = nome + ' ' + data + ' seq ' + str(seq)
 
 for i in sequencia:
-    geracao.simbolo('+', 3, 0.01, 350)
+    geracao.simbolo('+', 120, 0.01, 350)
     # Gerar a lista de dados
     lista_mostrada = geracao.geracao_dados(i[1])
     a = lista_mostrada
