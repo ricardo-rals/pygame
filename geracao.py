@@ -35,11 +35,11 @@ def simbolo(x, tempo1, tempo2, tamanho, quina = False, mouse = False):
                         pygame.Rect(0, screen_height-lado,
                        lado, screen_height))
     pygame.display.flip()
-    pygame.time.delay(math.floor(tempo1*10))
+    pygame.time.delay(math.floor(tempo1*1000))
     if tempo2 > 0:
         screen.fill(Configuracoes().black)
         pygame.display.flip()
-        pygame.time.delay(math.floor(tempo2*10))
+        pygame.time.delay(math.floor(tempo2*1000))
         
         
         
@@ -92,11 +92,11 @@ def simbolo_3_linhas(x, y, z, tempo1, tempo2, tamanho, quina = False, mouse = Fa
                         pygame.Rect(screen_width-lado, screen_height-lado,
                         screen_width, screen_height))
     pygame.display.flip()
-    pygame.time.delay(math.floor(tempo1*10))
+    pygame.time.delay(math.floor(tempo1*1000))
     if tempo2 > 0:
         screen.fill(Configuracoes().black)
         pygame.display.flip()
-        pygame.time.delay(math.floor(tempo2*10))        
+        pygame.time.delay(math.floor(tempo2*1000))        
 
 
 def geracao_dados(n):
@@ -139,10 +139,10 @@ def simbolo_count(bolas_brancas, distr_brancos, distr_azuis, tempo1, tempo2, qui
                         pygame.Rect(screen_width-lado, screen_height-lado,
                         screen_width, screen_height))
     pygame.display.flip()
-    pygame.time.delay(math.floor(tempo1*10))
+    pygame.time.delay(math.floor(tempo1*1000))
     if tempo2 > 0:
         screen.fill(Configuracoes().black)
         pygame.display.flip()
-        pygame.time.delay(math.floor(tempo2*10)) 
+        pygame.time.delay(math.floor(tempo2*1000)) 
     
     #return [bolas_brancas, distratores]  
