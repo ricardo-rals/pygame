@@ -28,8 +28,9 @@ def simbolo(x, tempo1, tempo2, tamanho, quina=False, mouse=False):
 
     if quina:
         lado = Configuracoes().lado_quadradinho
-        pygame.draw.rect(screen, Configuracoes().white,
-                         pygame.Rect(screen_width - lado, screen_height - lado, lado, lado))
+        pygame.draw.rect(screen, Configuracoes().white, 
+                        pygame.Rect(0, screen_height-lado,
+                       lado, screen_height))
     pygame.display.flip()
 
     # Controle do tempo com loop

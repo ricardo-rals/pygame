@@ -41,7 +41,7 @@ def abertura_pratica():
             elif event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
                 estado = False
             
-    geracao.simbolo('+',120, 0, 350)
+    geracao.simbolo('+',4, 0, 350)
     for _ in range(3):
         geracao.simbolo('Pisque', 2, 0, 200, quina=True)
         geracao.simbolo('', 2, 0, 40)

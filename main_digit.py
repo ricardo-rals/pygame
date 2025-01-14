@@ -46,7 +46,7 @@ caminho_diretorio = "excel_digit_span"
 titulo = nome + ' ' + data + ' seq ' + str(seq)
 
 for i in sequencia:
-    geracao.simbolo('+', 120, 0.01, 350)
+    geracao.simbolo('+', 6,0.01, 350)
     # Gerar a lista de dados
     lista_mostrada = geracao.geracao_dados(i[1])
     a = lista_mostrada
