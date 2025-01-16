@@ -115,7 +115,7 @@ for i in sequencia:
         lista_mostrada = [i[1][0][0], i[1][1][0], i[1][2][0], i[1][3][0], 
                             i[1][4][0], i[1][5][0], i[1][6][0], i[1][7][0]]
                    
-    lista_resultados = teclado.captacao_numeros_counting(len(i[1]), df, caminho_diretorio, titulo)    
+    lista_resultados = teclado.captacao_numeros(len(i[1]))    
 #    print(lista_resultados)
 #    print(lista_mostrada)
 #    print(colunas)
