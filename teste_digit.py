@@ -60,7 +60,7 @@ for i in sequencia:
     lista_mostrada = geracao.geracao_dados(i[1])
     a = lista_mostrada
     #pedir os dados do usuario
-    lista_resultados = teclado.captacao_numeros(i[1], df, caminho_diretorio, titulo)
+    lista_resultados = teclado.captacao_numeros(i[1])
     if i[1] == 3:
         colunas = [f'item {i[0]} {i[1]} i {a[0]}', f'item {i[0]} {i[1]} ii {a[1]}', f'item {i[0]} {i[1]} iii {a[2]}']
     elif i[1] == 5:
